@@ -1,11 +1,12 @@
 def Mo(a):
 	def inner(m):
 		sum=0
-		for x in range (m+1):
+		for x in range (101):
 			if x % 2==0:
 				sum+=x
 		print("sum of even number from 0 to m is :",sum)
-		return(a(m))
+		else:
+			return(a(m))
 	return inner
 
 @Mo
@@ -13,5 +14,6 @@ def Mo(a):
 
 def a(m):
 	print(" ")
-a(100)
+Mo(22)
+a(22)
 
